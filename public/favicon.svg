@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe270"/>
+      <stop offset="50%" stop-color="#e5a93b"/>
+      <stop offset="100%" stop-color="#9a6208"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0d111d"/>
+  <path d="M32 6L40 22L58 25L45 37L48 55L32 46L16 55L19 37L6 25L24 22Z" fill="url(#goldGrad)" filter="url(#glow)"/>
+  <circle cx="32" cy="33" r="7" fill="#0d111d"/>
+  <polygon points="32,28 35,34 32,37 29,34" fill="url(#cyanGrad)"/>
+</svg>
